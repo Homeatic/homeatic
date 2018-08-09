@@ -8,4 +8,7 @@
     <a href="https://swift.org">
         <img src="https://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
+    <a href="https://app.getpostman.com/run-collection/6f4380fb3a2943fb8b55">
+	<img src="https://run.pstmn.io/button.svg" alt="Run in postman">
+    </a>
 </p>
