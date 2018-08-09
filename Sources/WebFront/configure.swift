@@ -1,14 +1,20 @@
 import FluentSQLite
 import Vapor
+//import VaporRequestStorage
+//import JWTMiddleware
+import Authentication
+import Library
 
 /// Called before your application initializes.
-public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services) throws {
+public func configure(_ config: inout Config, _ env: inout Environment, _ services: inout Services, _ configurationDetail: Configuration.Webserver) throws {
+    
     /// Register providers first
     try services.register(FluentSQLiteProvider())
-
+    try services.register(AuthenticationProvider())
+    
     /// Register routes to the router
     let router = EngineRouter.default()
-    try routes(router)
+    try routes(router, configurationDetail)
     services.register(router, as: Router.self)
 
     /// Register middleware
@@ -27,7 +33,16 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
 
     /// Configure migrations
     var migrations = MigrationConfig()
-    migrations.add(model: Todo.self, database: .sqlite)
+    migrations.add(model: BearerToken.self, database: .sqlite)
     services.register(migrations)
+    
+//    WebSocket Example
+//    let wss = NIOWebSocketServer.default()
+//    wss.get("echo") { (ws, req) in
+//        ws.onText({ (ws, text) in
+//            ws.send(text)
+//        })
+//    }
+//    services.register(wss, as: WebSocketServer.self)
 
 }

@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Auth",
+        "repositoryURL": "https://github.com/vapor/auth.git",
+        "state": {
+          "branch": null,
+          "revision": "8c783272bbef7490781e0879ae5e9b5ceced0ec0",
+          "version": "2.0.0-rc.5"
+        }
+      },
+      {
         "package": "Console",
         "repositoryURL": "https://github.com/vapor/console.git",
         "state": {
@@ -38,6 +47,15 @@
         }
       },
       {
+        "package": "Files",
+        "repositoryURL": "https://github.com/JohnSundell/Files.git",
+        "state": {
+          "branch": null,
+          "revision": "06f95bd1bf4f8d5f50bc6bb30b808c253acd4c88",
+          "version": "2.2.1"
+        }
+      },
+      {
         "package": "Fluent",
         "repositoryURL": "https://github.com/vapor/fluent.git",
         "state": {
@@ -65,6 +83,15 @@
         }
       },
       {
+        "package": "JWT",
+        "repositoryURL": "https://github.com/vapor/jwt.git",
+        "state": {
+          "branch": null,
+          "revision": "de0dc5bbba60250c24c5c4b4d2505d7a71dd03ae",
+          "version": "3.0.0-rc.2.1.2"
+        }
+      },
+      {
         "package": "Multipart",
         "repositoryURL": "https://github.com/vapor/multipart.git",
         "state": {
@@ -80,6 +107,15 @@
           "branch": null,
           "revision": "3219e328491b0853b8554c5a694add344d2c6cfb",
           "version": "3.0.1"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "faeb158ce76d355f3f9242fdd0258a9face62f37",
+          "version": "4.2.0"
         }
       },
       {
@@ -114,8 +150,8 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "695afc5205aaa49fca092b94b479ff71c43d9d3c",
-          "version": "1.8.0"
+          "revision": "c6acf77fc9a310c0ebf8d5f73f285d1639801d2f",
+          "version": "1.9.0"
         }
       },
       {
@@ -150,8 +186,8 @@
         "repositoryURL": "https://github.com/vapor/template-kit.git",
         "state": {
           "branch": null,
-          "revision": "43b57b5861d5181b906ac6411d28645e980bb638",
-          "version": "1.0.1"
+          "revision": "db35b1c35aabd0f5db3abca0cfda7becfe9c43e2",
+          "version": "1.1.0"
         }
       },
       {
@@ -168,8 +204,8 @@
         "repositoryURL": "https://github.com/vapor/validation.git",
         "state": {
           "branch": null,
-          "revision": "ab6c5a352d97c8687b91ed4963aef8e7cfe0795b",
-          "version": "2.0.0"
+          "revision": "156f8adeac3440e868da3757777884efbc6ec0cc",
+          "version": "2.1.0"
         }
       },
       {
